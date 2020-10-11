@@ -1,1 +1,1 @@
-worker: node .env-example
+worker: node index.js
