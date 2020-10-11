@@ -1,14 +1,11 @@
 require("dotenv").config();//Loading .env
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
-
+const prefix = ("!");
 const client = new Client();//Making a discord bot client
 client.commands = new Collection();//Making client.commands as a Discord.js Collection
 client.queue = new Map()
 
-client.config = {
-  prefix: process.env.PREFIX
-}
 
 //Loading Events
 fs.readdir(__dirname + "/events/", (err, files) => {
@@ -34,4 +31,4 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 //Logging in to discord
-client.login(process.env.TOKEN)
+client.login("NzQyNDgyMTc5MDUyNzk4MDU0.XzGwag.VorWMN1uT3ZGQt1yarIYcMgQVe0")
