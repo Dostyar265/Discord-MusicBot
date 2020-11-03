@@ -5,7 +5,7 @@ const prefix = ("!");
 const client = new Client();//Making a discord bot client
 client.commands = new Collection();//Making client.commands as a Discord.js Collection
 client.queue = new Map()
-
+client.login(TOKEN)
 
 //Loading Events
 fs.readdir(__dirname + "/events/", (err, files) => {
