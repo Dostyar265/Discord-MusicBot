@@ -30,5 +30,3 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-//Logging in to discord
-client.login("NzQyNDgyMTc5MDUyNzk4MDU0.XzGwag.VorWMN1uT3ZGQt1yarIYcMgQVe0")
